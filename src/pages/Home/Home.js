@@ -4,11 +4,14 @@ import ProductList from "../../containers/ProductList/ProductList";
 import Pagination from "../../components/Pagination/Pagination";
 
 const Home = () => {
+    const custom = {
+      
+    }
     return (
         <React.Fragment>
-            <div className="container" style={{paddingTop: '6rem'}} >
+            <div className="container bg-dark custom" style={{paddingTop: '6rem'}} >
                 <div className="row">
-                    <FilterBar/>
+                    <FilterBar style={"backgroung: transparent"}/>
                     <ProductList/>
                 </div>
             </div>
